@@ -81,7 +81,7 @@ tk.Button(root, text='Запустить', command=ford_bellman, font=('Arial', 
 
 
 result_text = ScrolledText(root, height=15, width=70, font=('Arial', 12))
-result_text.pack(pady=10)
+result_text.pack(pady=10, fill=tk.Y, expand=True)
 result_text.config(state='disabled')
 
 
