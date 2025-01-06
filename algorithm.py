@@ -70,13 +70,11 @@ vertexes_entry.pack(pady=5)
 tk.Label(root, text='Введите рёбра графа (u v w):', font=('Arial', 14)).pack(pady=5)
 edges_text = ScrolledText(root, height=10, width=70, font=('Arial', 12))
 edges_text.pack(pady=5)
-edges_text.bind('<Control-v>', lambda e: edges_text.event_generate('<<Paste>>'))
 
 
 tk.Label(root, text='Введите исходную вершину:', font=('Arial', 14)).pack(pady=5)
 origin_entry = tk.Entry(root, font=('Arial', 14), width=10)
 origin_entry.pack(pady=5)
-origin_entry.bind('<Control-v>', lambda e: origin_entry.event_generate('<<Paste>>'))
 
 
 tk.Button(root, text='Запустить', command=ford_bellman, font=('Arial', 14), bg='#44824c').pack(pady=20)
